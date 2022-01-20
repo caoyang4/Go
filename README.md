@@ -1,2 +1,1 @@
-Go
-Go study and test
+Go Project
