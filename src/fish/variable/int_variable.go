@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+import "unsafe"
 
 var g1 = 6
 var g2 = "global"
@@ -52,4 +53,12 @@ func main() {
 	var ii2 uint8 = 255
 	fmt.Println(ii2)
 
+	x1 := int32(ii2)
+	fmt.Printf("type of x1 is %T \n", x1)
+
+	var x2 float32 = float32(ii2)
+	fmt.Printf("type of x2 is %T \n", x2)
+
+	x3 := 128
+	fmt.Printf("type of x3 is %T, size: %d \n", x3, unsafe.Sizeof(x3))
 }
