@@ -36,4 +36,20 @@ func main() {
 	k1, k2, k3 := 1, 1.23, "ok"
 	fmt.Println(k1, " ", k2, " ", k3)
 
+	x := 1.2
+	x = 1
+	fmt.Println("x=", x)
+
+	y := 1
+	z := 1
+	fmt.Println("y+z=", y+z)
+
+	// -128 - 127
+	var ii1 int8 = 127
+	fmt.Println(ii1)
+
+	// 0 - 255
+	var ii2 uint8 = 255
+	fmt.Println(ii2)
+
 }
