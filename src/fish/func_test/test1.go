@@ -1,5 +1,7 @@
 package func_test
 
+import "fmt"
+
 func Cal(n1 float64, n2 float64, oper byte) float64 {
 	var result float64
 	switch oper {
@@ -15,4 +17,12 @@ func Cal(n1 float64, n2 float64, oper byte) float64 {
 		return 0.0
 	}
 	return result
+}
+
+func RecursiveTest(n int) {
+	if n > 2 {
+		n--
+		RecursiveTest(n)
+	}
+	fmt.Println("n=", n)
 }
