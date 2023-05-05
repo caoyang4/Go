@@ -6,6 +6,11 @@ import (
 	"fmt"
 )
 
+var (
+	// 全局匿名函数
+	MyVar = func(n1 int, n2 int) int { return n1 * n2 }
+)
+
 func mod(p *int) {
 	*p += 1
 	fmt.Println("p=", *p)
@@ -74,5 +79,13 @@ func main() {
 	fmt.Printf("n1=%v, n2=%v \n", n1, n2)
 	func_test.Swap(&n1, &n2)
 	fmt.Printf("n1=%v, n2=%v \n", n1, n2)
+
+	// 匿名函数
+	fmt.Println("匿名函数")
+	sum := func(n1 int, n2 int) int {
+		return n1 * n2
+	}(2, 5)
+	fmt.Println("sum=", sum)
+	fmt.Println("multiple=", MyVar(2, 3))
 
 }
