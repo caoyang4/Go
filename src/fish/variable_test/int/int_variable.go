@@ -61,4 +61,7 @@ func main() {
 
 	x3 := 128
 	fmt.Printf("type of x3 is %T, size: %d \n", x3, unsafe.Sizeof(x3))
+
+	var x4 int
+	fmt.Println("x4=", x4)
 }
