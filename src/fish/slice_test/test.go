@@ -63,4 +63,7 @@ func main() {
 		fmt.Printf("index=%v, value=%c \n", i, v)
 	}
 
+	var slice4 []int = []int{2, 1}
+	slice4[0] = 1
+	fmt.Println("slice4=", slice4)
 }
